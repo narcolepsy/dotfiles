@@ -1,1 +1,3 @@
+#Set case insensitive tab completion on
 set completion-ignore-case On
+#TODO investigate vim-more for inputrc
