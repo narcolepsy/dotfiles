@@ -131,7 +131,7 @@ let g:ctrlp_root_markers = ['.p4config']
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 "let g:ctrlp_custom_ignore = '\v[\/](tech|tech_local)$'
-t g:ctrlp_custom_ignore = {
+let g:ctrlp_custom_ignore = {
   \ 'dir'        : '\v[\/](tech|tech_local)$',
   \ 'link'       : 'some_bad_symbolic_links',
 \ }
