@@ -1,0 +1,88 @@
+# [Created by task 2.5.0 11/29/2017 21:43:17]
+# Taskwarrior program configuration file.
+# For more documentation, see http://taskwarrior.org or try 'man task', 'man task-color',
+# 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# Use the command 'task show' to see all defaults and overrides
+
+# Files
+data.location=~/.task
+
+# Color theme (uncomment one to use)
+#include /usr/share/doc/task/rc/light-16.theme
+#include /usr/share/doc/task/rc/light-256.theme
+#include /usr/share/doc/task/rc/dark-16.theme
+#include /usr/share/doc/task/rc/dark-256.theme
+#include /usr/share/doc/task/rc/dark-red-256.theme
+#include /usr/share/doc/task/rc/dark-green-256.theme
+#include /usr/share/doc/task/rc/dark-blue-256.theme
+#include /usr/share/doc/task/rc/dark-violets-256.theme
+#include /usr/share/doc/task/rc/dark-yellow-green.theme
+#include /usr/share/doc/task/rc/dark-gray-256.theme
+#include /usr/share/doc/task/rc/dark-gray-blue-256.theme
+#include /usr/share/doc/task/rc/solarized-dark-256.theme
+#include /usr/share/doc/task/rc/solarized-light-256.theme
+#include /usr/share/doc/task/rc/no-color.theme
+
+# [Created by task 2.2.0 10/23/2014 16:50:08]
+ # Taskwarrior program configuration file.
+ # For more documentation, see http://taskwarrior.org or try 'man task', 'man task-faq',
+ # 'man task-tutorial', 'man task-color', 'man task-sync' or 'man taskrc'
+
+ # Here is an example of entries that use the default, override and blank values
+ #   variable=foo   -- By specifying a value, this overrides the default
+ #   variable=      -- By specifying no value, this means no default
+ #   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+ # Use the command 'task show' to see all defaults and overrides
+
+ # Files
+ data.location=~/.task
+
+ # Color theme (uncomment one to use)
+ #include /usr/share/task/light-16.theme
+ #include /usr/share/task/light-256.theme
+ #include /usr/share/task/dark-16.theme
+ #include /usr/share/task/dark-256.theme
+ #include /usr/share/task/dark-red-256.theme
+ #include /usr/share/task/dark-green-256.theme
+ #include /usr/share/task/dark-blue-256.theme
+ #include /usr/share/task/dark-violets-256.theme
+ #include /usr/share/task/dark-yellow-green.theme
+ #include /usr/share/task/dark-gray-256.theme
+
+ #############################
+ ## CALENDAR
+ #############################
+ calendar.holidays=sparse
+ weekstart=Monday
+
+ #############################
+ ### Private settings
+ ##############################
+include ~/.taskrc_mb
+
+ #################################
+ ## PROJECTS
+ #################################
+ #Try to make the defaultwidth larger than 80 columns which is proving to be a PITA
+ defaultwidth=160
+ #try to set up columns correctly
+ report.long.columns = id,start.active,entry.age,modified.age,depends.list,priority,project,tags,recur,wait.age,scheduled,due.formatted,until.age,urgency.real,description
+ report.long.labels=ID,A,Add,Mod,Deps,Prio,Project,Tags,Recur,Wait,Sched,Due,Until,Urgency,Description
+ report.long.sort=urgency-
+
+ #Now set up the priorities for all the projects I'm working on.....
+ # First set up the inbox to be highest priority - they all need to be sorted out first
+ urgency.user.tag.in.coefficient = 200
+ urgency.user.project.house.coefficient = 50
+ urgency.user.project.bike.coefficient = 20
+ urgency.tags.fll.coefficient = 10.0
+ urgency.tags.coefficient = 0.0
+
+
