@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/c3373c1/
+;\\	vimrc	/^cmap ;\\ \\(\\)<Left><Left>$/;"	m
+<F11>	vimrc	/^map <F11> :let &background = ( &background == "light"? "dark" : "light" )<CR>$/;"	m
+<F3>	vimrc	/^nnoremap <F3> :TagbarToggle<CR>$/;"	m
+<F4>	vimrc	/^nnoremap <F4> :! p4 edit %<CR>$/;"	m
+<F5>	vimrc	/^nnoremap <F5> :GundoToggle<CR>$/;"	m
+<F6>	vimrc	/^nnoremap <F6> :IndentLinesToggle<CR>$/;"	m
+<F7>	vimrc	/^nnoremap <F7> :NERDTreeToggle<CR>$/;"	m
+<F9>	vimrc	/^inoremap <F9> <C-O>za$/;"	m
+<F9>	vimrc	/^nnoremap <F9> za$/;"	m
+<F9>	vimrc	/^onoremap <F9> <C-C>za$/;"	m
+<F9>	vimrc	/^vnoremap <F9> zf$/;"	m
+<leader>U	vimrc	/^nmap <leader>U :set gfn=Terminess\\ Powerline\\ 15<CR>$/;"	m
+<leader>c	vimrc	/^nmap <leader>c "+y$/;"	m
+<leader>fol	vimrc	/^nmap <leader>fol :set shiftwidth=2<CR>:set fdm=indent<CR>:set foldcolumn=4<CR>$/;"	m
+<leader>h	vimrc	/^nmap <leader>h :nohlsearch<CR>$/;"	m
+<leader>inst	vimrc	/^nmap <leader>inst mb?)[\\n\\s]*\\s*\\w\\+[\\n\\s]*\\s*(<CR>wyw\/<Up><Up><CR>'b:echo "instance --/;"	m
+<leader>l	vimrc	/^nmap <leader>l :set list!<CR>$/;"	m
+<leader>m	vimrc	/^nmap <leader>m &$/;"	m
+<leader>mod	vimrc	/^nmap <leader>mod ma?module<CR>Wyiw\/<Up><Up><CR>'a:echo "module -->" @0<CR>$/;"	m
+<leader>n	vimrc	/^nmap <leader>n :NERDTree$/;"	m
+<leader>nof	vimrc	/^nmap <leader>nof :set shiftwidth=3<CR>:set nofoldenable<CR>:set foldcolumn=0<CR>$/;"	m
+<leader>nt	vimrc	/^nmap <leader>nt :NERDTree<CR>$/;"	m
+<leader>p4	vimrc	/^nmap <leader>p4 :! p4 edit %<CR>$/;"	m
+<leader>s	vimrc	/^nmap <leader>s :w!<CR>$/;"	m
+<leader>so	vimrc	/^nmap <leader>so :source ~\/.vimrc<CR>$/;"	m
+<leader>t	vimrc	/^nmap <leader>t :call mkdir(fnamemodify(tempname(),':h'),'p',0700)<CR>$/;"	m
+<leader>tl	vimrc	/^nmap <leader>tl :TlistToggle<CR>$/;"	m
+<leader>u	vimrc	/^nmap <leader>u :set gfn=Terminess\\ Powerline\\ 8<CR>$/;"	m
+<leader>v	vimrc	/^nmap <leader>v :s\/\\<\\w*\\>\/&  (&)<CR>\/aaa<CR>$/;"	m
+NERDTreeMouseMode	vimrc	/^let NERDTreeMouseMode = 2$/;"	v
+Tab_Or_Complete	vimrc	/^function! Tab_Or_Complete()$/;"	f
+Tlist_Use_Right_Window	vimrc	/^let Tlist_Use_Right_Window=1$/;"	v
+g:airline_powerline_fonts	vimrc	/^   let g:airline_powerline_fonts = 1$/;"	v
+g:ctrlp_cmd	vimrc	/^let g:ctrlp_cmd = 'CtrlP'$/;"	v
+g:ctrlp_custom_ignore	vimrc	/^let g:ctrlp_custom_ignore = {$/;"	v
+g:ctrlp_map	vimrc	/^let g:ctrlp_map = '<c-p>'$/;"	v
+g:ctrlp_root_markers	vimrc	/^let g:ctrlp_root_markers = ['.p4config']$/;"	v
+g:gutentags_ctags_exclude	vimrc	/^let g:gutentags_ctags_exclude = [ 'tech\/*',$/;"	v
+g:gutentags_enabled	vimrc	/^let g:gutentags_enabled       = 1$/;"	v
+g:gutentags_project_root	vimrc	/^let g:gutentags_project_root  = ['.p4config']$/;"	v
+g:p4MaxLinesInDialog	vimrc	/^let g:p4MaxLinesInDialog = 5$/;"	v
+g:solarized_termcolors	vimrc	/^      let g:solarized_termcolors=256$/;"	v
+mapleader	vimrc	/^let mapleader = ","$/;"	v
