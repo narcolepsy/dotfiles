@@ -119,8 +119,14 @@ else
    "set gfn=monofur\ for\ Powerline\ 10
    "set gfn=Neep\ 7
    "colors wombat
-   set background=dark
-   colors solarized
+   if has('gui_running')
+      set background=dark
+      colors solarized
+   else
+      set background=dark
+      let g:solarized_termcolors=256
+      colors solarized
+   endif
    "highlight Search ctermfg=0 ctermbg=220 guifg=black guibg=gold
 endif
 
@@ -131,7 +137,7 @@ let g:ctrlp_root_markers = ['.p4config']
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 "let g:ctrlp_custom_ignore = '\v[\/](tech|tech_local)$'
-t g:ctrlp_custom_ignore = {
+let g:ctrlp_custom_ignore = {
   \ 'dir'        : '\v[\/](tech|tech_local)$',
   \ 'link'       : 'some_bad_symbolic_links',
 \ }
@@ -150,7 +156,7 @@ nnoremap <F4> :! p4 edit %<CR>
 
 " Adding toggle for tabbar
 nnoremap <F3> :TagbarToggle<CR>
-let g:tagbar_ctags_bin = $HOME . '/build/universal-ctags/bin/ctags'
+"let g:tagbar_ctags_bin = $HOME . '/build/universal-ctags/bin/ctags'
 
 " Adding in indentlines toggle
 nnoremap <F7> :NERDTreeToggle<CR>
@@ -173,7 +179,7 @@ let Tlist_Use_Right_Window=1
 "Define a list of project roots for taglist creation
 let g:gutentags_enabled       = 1
 "TODO get universal ctags installed!
-let g:gutentags_ctags_executable = $HOME . '/build/universal-ctags/bin/ctags'
+"let g:gutentags_ctags_executable = $HOME . '/build/universal-ctags/bin/ctags'
 let g:gutentags_ctags_exclude = [ 'tech/*',
                                  \ 'tech_local/*',
                                  \ '*.js',
