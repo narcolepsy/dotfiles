@@ -21,3 +21,9 @@ cd ~/build/ctags
 ./autogen.sh && ./configure && make && sudo make install
 
 
+#Stupid Ubuntu and Mint have bitmapped fonts disabled by default (!)
+cd /etc/fonts/conf.d/
+sudo rm /etc/fonts/conf.d/10*
+sudo rm -rf 70-no-bitmaps.conf
+sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
+sudo dpkg-reconfigure fontconfig
