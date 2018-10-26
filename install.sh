@@ -6,27 +6,6 @@
 
 
 #Now symlink all the dotfiles into place, backing up existing ones (if a genuine file and not already a symlink to the destination!)
-#if [ -e $HOME/.irbrc ]
-#then echo "Found .irbrc - not adding symlink"
-#else echo "No .irbrc found, creating symlink"
-#   ln -s irbrc $HOME/.irbrc
-#fi
-#if [ -e $HOME/.screenrc ]
-#then echo "Found .screenrc - not adding symlink"
-#else echo "No .screenrc found, creating symlink"
-#   ln -s screenrc $HOME/.irbrc
-#fi
-#if [ -e $HOME/.irbrc ]
-#then echo "Found .irbrc - not adding symlink"
-#else echo "No .irbrc found, creating symlink"
-#   ln -s irbrc $HOME/.irbrc
-#fi
-#if [ -e $HOME/.irbrc ]
-#then echo "Found .irbrc - not adding symlink"
-#else echo "No .irbrc found, creating symlink"
-#   ln -s irbrc $HOME/.irbrc
-#fi
-
 for i in irbrc screenrc inputrc vimrc; do
    if [ -e $HOME/.$i ]
    then echo "Found .$i - not adding symlink"
