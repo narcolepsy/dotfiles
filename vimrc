@@ -110,7 +110,7 @@ if has('win32') || has('win64')
 else
    "set gfn=Liberation\ Mono\ 6.5
    "set gfn=Bitstream\ Vera\ Sans\ Mono\ 7
-   set gfn=Terminess\ Powerline\ 8
+   set gfn=Terminess\ Powerline\ 14
    "Try to get powerline symbols working in vim
    let g:airline_powerline_fonts = 1
 
