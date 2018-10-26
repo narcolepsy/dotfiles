@@ -141,9 +141,6 @@ let g:ctrlp_custom_ignore = {
   \ 'dir'        : '\v[\/](tech|tech_local)$',
   \ 'link'       : 'some_bad_symbolic_links',
 \ }
-"  \ 'tech':  '\vtech\/$',
-"  \ 'tech_local': '\vtech_local\/$',
-"  \ 'link': 'some_bad_symbolic_links',
 """""""""""""""""""""""""""""""""""""""""
 "" Folding ""
 """""""""""""""""""""""""""""""""""""""""
