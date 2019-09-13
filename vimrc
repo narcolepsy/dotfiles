@@ -123,6 +123,12 @@ else
       set background=dark
       colors solarized
    else
+      set mouse=a
+      if has("mouse_sgr")
+         set ttymouse=sgr
+      else
+         set ttymouse=xterm2
+      endif
       set background=dark
       let g:solarized_termcolors=256
       colors solarized
