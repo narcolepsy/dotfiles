@@ -18,7 +18,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 # We need to have autogen installed to get ctags built
-sudo apt-get install autogen autoconf
+sudo apt-get install autogen autoconf pkg-config make
 #Now go for the install
 git clone https://github.com/universal-ctags/ctags.git ~/build/ctags
 cd ~/build/ctags
